@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="seJ-Wj-zVN" id="Est-hg-0zU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="KM8-B3-kzn">
@@ -48,6 +48,7 @@
                                     <outlet property="nameLabel" destination="WXd-iZ-hNi" id="i7H-Sf-XYv"/>
                                     <outlet property="photoImageView" destination="KM8-B3-kzn" id="Aop-Gz-gOR"/>
                                     <outlet property="ratingControl" destination="4xg-UB-wOr" id="PpA-n2-pga"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="cNn-Fd-tsT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,7 +67,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6Z-1A-Hot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="3"/>
+            <point key="canvasLocation" x="-158" y="0.0"/>
         </scene>
         <!--New Meal-->
         <scene sceneID="tne-QT-ifu">
@@ -139,7 +140,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1460" y="0.0"/>
+            <point key="canvasLocation" x="1570" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u4C-pj-ox7">
@@ -157,7 +158,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPD-eK-wTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732" y="4"/>
+            <point key="canvasLocation" x="-1081" y="0.0"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kKw-VF-k6W">
@@ -175,10 +176,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBd-zE-brl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="1"/>
+            <point key="canvasLocation" x="714" y="358"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="320" height="320"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cNn-Fd-tsT"/>
+    </inferredMetricsTieBreakers>
 </document>
